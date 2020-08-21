@@ -104,13 +104,13 @@ class SortingRobot:
                 SortingRobot.move_right(self)
                 if SortingRobot.compare_item(self) is not None and SortingRobot.compare_item(self) == 1:
                     SortingRobot.swap_item(self)
-                while SortingRobot.can_move_left(self):
-                    SortingRobot.move_left(self)
-                while SortingRobot.can_move_right(self) and SortingRobot.compare_ite(self) is not None:
-                    SortingRobot.move_right(self)
-                SortingRobot.swap_item(self)
+            while SortingRobot.can_move_left(self):
+                SortingRobot.move_left(self)
+            while SortingRobot.can_move_right(self) and SortingRobot.compare_item(self) is not None:
                 SortingRobot.move_right(self)
-                if SortingRobot.can_move_right(self) == False:
+            SortingRobot.swap_item(self)
+            SortingRobot.move_right(self)
+            if SortingRobot.can_move_right(self) == False:
                     break
 
 
