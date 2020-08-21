@@ -12,4 +12,4 @@ def count_th(word):
         return 1+ count_th(word[2:])
     else:
         return count_th(word[1:])
-    pass
+   #count_th("thesis")
